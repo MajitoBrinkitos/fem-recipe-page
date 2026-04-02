@@ -1,0 +1,181 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: hsl(29, 53%, 90%);
+    padding-top: 4rem;
+    font-size: 1rem;
+}
+
+/*Container*/
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+
+    /*Image container*/
+    .image {
+        display: flex;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
+    /*Intro*/
+    .header {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-family: "Young Serif", serif;
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-family: "Outfit", sans-serif;
+            padding: 1rem 0;
+            text-align:justify;
+            letter-spacing: 1.5px;
+            font-size: 1rem;
+        }
+    }
+
+    /*Preparation time*/
+    .times {
+        background-color: hsl(322, 100%, 98%);
+        padding: 1rem 2rem;
+        font-family: "Outfit", sans-serif;
+        border-radius: 20px;
+
+        h3 {
+            font-weight: 500;
+            color: hsl(14, 42%, 34%);
+            font-size: 1.5rem;
+        }
+
+        ul {
+            padding: 1rem 1rem;
+            li {
+                padding-left: 1rem;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+                li::before {
+                    content: "•"; color: hsl(14, 42%, 34%);
+                }
+            }
+        }
+    }
+
+    /*Section: Ingredients*/
+    .ingredients {
+        padding: 1rem 0;
+        h2 {
+            font-family: "Young Serif", serif;
+            color: hsl(14, 42%, 34%);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        ul {
+            padding: 1rem 1rem;
+            li {
+                padding-left: 1rem;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+                font-family: "Outfit", sans-serif;
+                li::before {
+                    content: "•"; color: hsl(14, 42%, 34%);
+                }
+            }
+        }
+    }
+    
+    hr {
+        border-top: hsl(14, 42%, 34%);
+    }
+
+    /*Instructions*/
+    .instructions {
+        padding: 1rem 0;
+        h2 {
+            font-family: "Young Serif", serif;
+            color: hsl(14, 42%, 34%);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        ol{
+            padding: 1rem 1rem;
+            li {
+                list-style-type:decimal;
+                padding-left: 1rem;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+                font-family: "Outfit", sans-serif;
+            }
+        }
+    }
+
+      hr {
+        border-top: hsl(14, 42%, 34%);
+    }
+
+    .nutrition {
+        padding: 1rem 0;
+        h2 {
+            font-family: "Young Serif", serif;
+            color: hsl(14, 42%, 34%);
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: "Outfit", sans-serif;
+            padding: 1rem 0;
+            text-align:justify;
+            letter-spacing: 1.5px;
+            font-size: 1rem;
+        }
+
+        /*table*/
+        .table {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .item, .weight {
+                p {
+                border-bottom: 1px solid hsl(14, 42%, 34%);
+                font-size: 1rem;
+                }
+
+            }
+            .weight {
+                p{
+                color: hsl(14, 42%, 34%);
+                font-weight: bold;
+                }
+            }       
+        }
+    }
+}
